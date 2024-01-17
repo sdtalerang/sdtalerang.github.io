@@ -1,94 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jioking - Telecom Operator</title>
-<style>body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+<style>
+body {
+ font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 1em;
+form {
+ width: 300px;
+ margin: 0 auto;
 }
 
-header h1 {
-    margin: 0;
+form input {
+ width: 100%;
+ padding: 10px;
+ margin: 5px 0 15px;
+ border: 1px solid #ddd;
 }
 
-nav {
-    background-color: #f1f1f1;
-    padding: 1em;
+form input[type="submit"] {
+ background-color: #4CAF50;
+ color: white;
+ cursor: pointer;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+form input[type="submit"]:hover {
+ background-color: #45a049;
 }
 
-nav li {
-    display: inline;
-    margin-right: 1em;
+form div {
+ margin-bottom: 10px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #007BFF;
+form label,
+form input {
+ display: block;
 }
 
-section {
-    padding: 2em;
+form label {
+ margin-bottom: 5px;
 }
 
-section h2 {
-    margin-top: 0;
+.error {
+ color: red;
+ margin-top: 10px;
 }
-
-footer {
-    background-color: #f1f1f1;
-    padding: 1em;
-    text-align: center;
-}
-
-#coverage img {
-    max-width: 100%;
-    height: auto;
-}</style>
+</style>
 </head>
-<>
-    <header>
-        <h1>Welcome to Jioking</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#coverage">Coverage</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>At Jioking, we offer a wide range of telecom services to meet your needs. From voice and data plans to mobile devices and accessories, we have everything you need to stay connected.</p>
-    </section>
-    <section id="coverage">
-        <h2>Our Coverage</h2>
-        <p>Jioking's network covers over 90% of the population in our service area. Check out our coverage map to see if your area is included.</p>
-        <img src="coverage-map.jpg" alt="Jioking coverage map">
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or need help? Our customer service team is here to assist you. Contact us by phone, email, or live chat.</p>
-        <ul>
-            <li>Phone: 1-800-555-1212</li>
-            <li>Email: <a href="mailto:info@jioking.com">info@jioking.com</a></li>
-            <li>Live Chat: <a href="#">Start a chat</a></li>
-        </ul>
-    </section>
-    <footer>
-        <p>Copyright © 2023 Jioking. All rights reserved.</p>
-    </footer>
+<body>
+
+<h2>Sign Up Form</h2>
+
+<form action="signup.php" method="post">
+ <div>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+ </div>
+ <div>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+ </div>
+ <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+ </div>
+ <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+ </div>
+ <div>
+    <label for="cpassword">Confirm Password:</label>
+    <input type="password" id="cpassword" name="cpassword" required>
+ </div>
+ <input type="submit" value="Sign Up">
+</form>
+
 </body>
 </html>
